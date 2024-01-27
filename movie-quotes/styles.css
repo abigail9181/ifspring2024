@@ -1,0 +1,43 @@
+html {
+    background-color: #121414;
+    color: #e5e7e4;
+    margin: 50px;
+    /*W3 schools */
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size:large;
+}
+
+
+h1, h3, h4{
+    color:#74968f;
+}
+
+strong {
+    color:#677e91;
+}
+
+i{
+    color:#a8aaa7;
+}
+hr.solid {
+    border-top: 3px solid #bbb;
+    border-color: #a94040;
+  }
+
+
+/* strong.person2{
+    color: #878b87
+}
+
+strong.person3{
+    color: #5a7e6c
+}
+
+strong.person4{
+    color: #a65757
+}
+
+strong.person5{
+    color: #54585d
+
+} */
