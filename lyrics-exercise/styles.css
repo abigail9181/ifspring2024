@@ -1,0 +1,34 @@
+html {
+    background-color: #C08552;
+    color: #5E3023;
+    margin: 50px;
+    /*W3 schools */
+    font-family: Georgia, serif;
+    font-size:large;
+}
+
+#lyrics {
+    background-color: hsl(34, 49%, 91%);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+p.bracket{
+    color: #DAB49D;
+}
+
+h1, h2, .header{
+    text-align: center;
+}
+
+#album-cover {
+    display: block;
+    width: 25%;
+    height: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    text-align:center;
+}
