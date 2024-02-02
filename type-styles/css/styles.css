@@ -1,0 +1,71 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    margin: 55px;
+}
+
+p{
+    margin: 0.1em;
+}
+
+.description, footer {
+    color: rgb(183, 121, 5);
+    font-size: 14px;
+    margin: 0.15em;
+}
+h2, hr{
+    color: rgb(183, 121, 5);
+    margin-bottom: 0.1em;
+}
+/* FONT WEIGHT */
+#fontweight-light {
+    font-weight: lighter;
+}
+
+#fontweight-medium {
+    font-weight: normal;
+}
+
+#fontweight-bold {
+    font-weight: bolder;
+}
+
+/* FONT STYLE */
+
+#fontstyle-italics {
+    font-style: italic;
+}
+
+/* LETTERSPACING */
+#letterspacing-negative {
+    letter-spacing: -0.1em;
+}
+
+#letterspacing-positive {
+    letter-spacing: 0.25em;
+}
+
+/* TEXT DECORATION */
+#decoration-underline {
+    text-decoration: underline;
+}
+
+#decoration-overline {
+    text-decoration: overline;
+}
+#decoration-linethrough {
+    text-decoration: line-through;
+}
+
+/*TEXT TRANSFORM*/
+#transform-uppercase {
+    text-transform:uppercase;
+}
+
+#transform-lowercase {
+    text-transform:lowercase;
+}
+
+#transform-capitalize {
+    text-transform:capitalize;
+}
