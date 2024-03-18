@@ -1,0 +1,243 @@
+
+html{
+    font-family: "Urbanist", sans-serif;
+    color: rgb(9, 55, 22);
+    background-color: rgb(223, 193, 147);
+
+} 
+
+
+/* header edits */
+
+header {
+    background-image: url('../images/B2.matcha_tiramisu_with_flowers.jpeg');
+    background-size: cover;
+    background-position: 35%;
+    color: rgb(9, 55, 22);
+    margin: auto;
+    text-align: center;
+    padding: 166px 0px 159px 0px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 0px;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4{
+    font-size: 18px;
+}
+
+.column_container{
+    margin: auto;
+    width: 80%;
+}
+
+p {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 0.98em;
+    margin-top: 0.98em;
+}
+
+/* intro */
+#intro, #supplies{
+    background-color: rgb(253, 232, 200);
+    padding: 0.5px 0px 37.5px 0px;
+}
+
+ #intro-description{
+    display: flex;
+    
+} 
+#matcha-tiramisu-img img{
+
+    margin-top: 40px;
+    margin-right:50px;
+    height: 300px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 20px;;
+    border-collapse: separate; 
+
+}
+
+#matcha-tiramisu-desc{
+    justify-content: center;
+    margin: auto;
+}
+
+@media (max-width: 900px){
+    p{
+        font-size: 16px;
+    }
+
+    #intro-description{
+        display: flex;
+        flex-wrap: wrap;
+    }
+       
+}
+
+/* bubbles */
+#intro ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: 0px;
+    padding: 20px 0px 0px 0px;    
+    line-height: 1rem;
+    width: 100%;    
+    align-content: space-between;
+}
+
+#intro li {
+    background-color: rgba(173,191,51,255);
+    border-radius: 20px;
+    padding: 10px 15px 10px 15px;
+    width: 180px;
+    /* margin: 30px; */
+    height: 120px;
+    text-align: center;
+    margin: auto;
+}
+
+@media (max-width: 1075px) {
+    #intro li{
+        width: 45%;
+        margin: 5px;
+        padding: 0px;
+    }
+}
+
+/* border-top: 1px dashed #077bca; */
+/* EQUIPMENT AND INGREDIENTS */ 
+
+#supplies{
+    border-top: 5px dashed rgba(173,191,51,255);
+    padding-top: 50px;
+}
+
+#supplies img{
+    text-align: left;
+    height: 520px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 20px;;
+    border-collapse: separate; 
+}
+
+#supplies ul{
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 0.98em;
+    margin-top: 0.98em;
+}
+
+.supplies-info{
+    background-color: rgb(223, 193, 147);
+    padding: 10px 20px 10px 20px;
+    margin: 5px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+#supplies-flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+@media (max-width: 875px){
+    #supplies img{
+        width: 100%;
+    }
+}
+
+/* INSTRUCTIONS */
+#instructions{
+    background-color: rgb(253, 232, 200);
+    padding: 0.5px 0px 37.5px 0px;
+}
+
+.filling-instructions, .assembly-instructions{
+    background-color: rgb(223, 193, 147);
+    padding: 10px 20px 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+#instructions ol{
+    display: grid;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#instructions li{
+    border-top: 1px groove rgba(173,191,51,255);
+    display: flex;
+    align-items: flex-start;
+    margin: 0px 20px 20px 20px;
+    padding-top:20px;
+}
+
+/* #instructions li div{
+    justify-content: flex-start;
+} */
+
+#instructions img{
+    width: 200px;
+    float: right;
+    margin-right: 40px;
+    border-radius: 20px;
+}
+
+h6{
+    font-size: 0.85em;
+}
+
+@media (max-width: 675px){
+    #instructions img{
+        width: 150px;
+    }
+}
+
+
+/* NOTES & TIPS */
+
+#notes{
+    background-color: rgb(253, 232, 200);
+    padding: 0.5px 0px 57.5px 0px;
+    margin-bottom: 20px;
+}
+
+#tips{
+    border-radius: 20px;
+    background-color: rgb(223, 193, 147);
+    padding: 10px 20px 20px 20px;
+    margin: 5px;
+    font-size: 18px
+}
+
+/* FOOTER */
+
+footer{
+    background-color: rgba(173,191,51,255);
+    padding: 100px;
+    
+}
+
