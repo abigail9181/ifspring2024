@@ -1,0 +1,286 @@
+html {
+    background-color: #332a2d;
+    font-family: "Reddit Mono", monospace;
+}
+
+/* NAVBAR */
+#navbar {
+    position: sticky;
+    top: 0px;
+    background-color: #b681588a;
+    opacity: 50px;
+}
+
+#navbar ul {
+
+    list-style: none;
+    margin: 0rem;
+    padding: 0;
+    font-family: "Archivo Black", sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #090003;
+
+    display: flex;
+    justify-content: right;
+}
+
+#navbar li {
+    padding: 20px;
+}
+
+#navbar li:active {
+    color: red;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: gold;
+    /* color: #cbab84; */
+}
+
+/* 
+@media (max-width: 650px){
+    #navbar{
+
+    } */
+/* Header */
+
+header {
+    background-image: url('../../OJ-simpson-materials/ojsimpsontrialcase.jpeg');
+    background-size: cover;
+    background-position: 5% 25%;
+    height: 250px;
+    color: rgb(255, 255, 255);
+    padding: 50px 30px 209px 0px;
+    margin-top: 0;
+
+}
+
+h1 {
+    font-family: "Archivo Black", sans-serif;
+    text-transform: uppercase;
+    font-size: 70px;
+}
+
+header h1 {
+    margin: 0px 0px 0px 40px;
+    text-shadow: 2px 2px 2px red;
+    line-height: 1.2em;
+}
+
+h3 {
+    font-family: "Workbench", sans-serif;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: red;
+    text-shadow: 1px 1px 1px #332a2d;
+}
+
+header h3 {
+    margin: 10px 0px 10px 48px
+}
+
+
+#home {
+    margin-top: 20px;
+}
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
+/* BODY */
+
+/* Overview */
+.column-container {
+    margin: auto;
+    width: 80%;
+}
+
+p {
+    color: #e8e0ca;
+    line-height: 1.5em;
+    margin: 1.1em 0em 1.1em 0em;
+}
+
+.column-container h3 {
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+#summary img {
+    margin: 35px 40px 35px 0px;
+    height: 380px;
+    object-fit: cover;
+    border-collapse: separate;
+    text-shadow: 1px 1px 1px gold;
+    float: left;
+
+}
+
+@media (max-width: 600px) {
+    #summary img {
+        height: 300px;
+        justify-content: center;
+    }
+}
+
+#summary {
+    padding-bottom: 50px;
+}
+
+/* key players */
+
+#key-players {
+    background-color: gold;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+#key-players ul {
+    list-style: none;
+    display: flex;
+
+}
+
+#key-players li {
+    width: 10%;
+    margin-right: 10px;
+    min-width: 200px;
+    vertical-align: top;
+}
+
+#key-players li img {
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#key-players li strong {
+    font-family: "Archivo Black", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px white;
+
+    font-size: 20px;
+    line-height: 1.2em;
+
+}
+
+#key-players li p {
+    margin: 10px 0px;
+    color: #332a2d
+}
+
+@media (max-width: 1250px) {
+    #key-players li {
+        display: flex;
+        flex: 0 0 auto;
+        padding-bottom: 120px;
+        align-content: center;
+        width: 33%;
+        align-items:baseline;
+        justify-content:center;
+    }
+
+    #key-players ul {
+        overflow-x: auto;
+    }
+
+    #key-players p {
+        font-size: 12px;
+        width:140px;
+    }
+
+    #key-players li img {
+        height: 210px;
+        width: 140px;
+        object-fit: cover;
+    }
+}
+@media (max-width: 560px) {
+    #key-players li {
+        display: flex;
+        flex: 0 0 auto;
+        padding-bottom: 120px;
+        align-content: center;
+        width: 100%;
+        align-items:baseline;
+        justify-content:center;
+    }
+
+    #key-players ul {
+        overflow-x: auto;
+    }
+
+    #key-players p {
+        font-size: 12px;
+        width:140px;
+    }
+
+    #key-players li img {
+        height: 210px;
+        width: 140px;
+        object-fit: cover;
+    }
+}
+
+/* Background */
+
+#background img {
+    margin: 35px 0px 35px 40px;
+    height: 380px;
+    object-fit: cover;
+    border-collapse: separate;
+    float: right;
+}
+
+/* Trial */
+#trial{
+    padding-bottom: 50px;
+}
+#trial strong {
+    font-family: "Archivo Black", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: gold;
+    text-shadow: 1px 1px 1px red;
+
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+h4{
+    font-style: bold;
+    color:#332a2d;
+    letter-spacing: 0.25em;
+}
+
+#two-sides{
+    display:flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#two-sides > div {
+    width: 50%;
+    padding: 20px;
+    margin: 5px;
+    background-color: #b68158;
+
+}
+
+/* Footer */
+footer{
+    padding: 100px 0px;
+    background-color: #b681588a;
+}
