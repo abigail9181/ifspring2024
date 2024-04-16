@@ -1,0 +1,384 @@
+html {
+    background-color: #332a2d;
+    font-family: "Reddit Mono", monospace;
+    scroll-behavior: smooth;
+    
+}
+
+/* NAVBAR */
+#navbar {
+    position: sticky;
+    top: 0px;
+    background-color: #7a5945;
+    padding: 5px;
+    z-index: 100;
+}
+
+#navbar.active {
+    color: red;
+}
+
+#navbar-full {
+    list-style: none;
+    margin: 0rem;
+    padding: 0;
+    font-family: "Archivo Black", sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #090003;
+
+    display: flex;
+    justify-content: right;
+}
+
+#navbar li {
+    padding: 20px;
+}
+
+#navbar li:hover {
+    font-style: italic;
+    color: gold;
+
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: gold;
+}
+
+.dropdown{
+        display: none;
+    }
+
+.active{
+    font-style: italic;
+}
+/* navbarbegins */
+@media (max-width: 650px){
+
+    #navbar-full{
+        display:none;
+    }
+    .dropdown{
+        display: inline-block;
+        font-family: "Archivo Black", sans-serif;
+
+    }
+    .dropdown button {
+        background-color: #7a5945;
+        color: gold;
+        padding: 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        font-family: "Archivo Black", sans-serif;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 2px #090003;
+    
+    }
+    
+    .dropdown a{
+        display: block;
+        color: gold;
+        text-decoration: none;
+        padding: 20px;
+    }
+    
+    .dropdown .content{
+        display: none;
+        background-color: #7a5945;
+        position: absolute;
+        min-width: 100px;
+        box-shadow: 2px 2px 5px black;
+        font-family: "Archivo Black", sans-serif;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 2px #090003;
+        font-size: 14px;
+    }
+    
+    .dropdown:hover .content{
+        display: block;
+    }
+
+    .dropdown .content a:hover{
+        font-style: italic;
+    }
+    }
+/* Header */
+
+header {
+    background-image: url('../../OJ-simpson-materials/ojsimpsontrialcase.jpeg');
+    background-size: cover;
+    background-position: 5% 25%;
+    height: 250px;
+    color: rgba(255, 255, 255, 0.999);
+    padding: 50px 40px 269px 0px;
+    margin-top: 0;
+
+}
+
+h1 {
+    font-family: "Archivo Black", sans-serif;
+    text-transform: uppercase;
+    font-size: 80px;
+}
+
+header h1 {
+    margin: 0px 0px 0px 40px;
+    text-shadow: 2px 2px 2px red;
+    line-height: 1.2em;
+}
+
+h3 {
+    font-family: "Workbench", sans-serif;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    font-size: 28px;
+    color: red;
+    text-shadow: 1px 1px 1px #332a2d;
+}
+
+header h3 {
+    margin: 20px 0px 10px 48px
+}
+
+
+#home {
+    margin: auto;
+    width: 90%;
+}
+
+
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 60px;
+    }
+
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
+/* BODY */
+
+/* Overview */
+.column-container {
+    margin: auto;
+    width: 70%;
+}
+
+p {
+    color: #e8e0ca;
+    line-height: 1.75em;
+    margin: 1.1em 0em 1.1em 0em;
+    padding-bottom: 8px;
+}
+
+.column-container h3 {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+#overview img {
+    margin: 35px 40px 35px 0px;
+    height: 380px;
+    object-fit: cover;
+    border-collapse: separate;
+    text-shadow: 1px 1px 1px gold;
+    float: left;
+
+}
+
+@media (max-width: 600px) {
+    #overview img {
+        height: 300px;
+        justify-content: center;
+    }
+}
+
+#summary {
+    padding-bottom: 50px;
+}
+
+/* key players */
+
+#key-players {
+    background-color: rgba(255, 217, 0, 0.883);
+    padding-top: 30px;
+    padding-bottom: 50px;
+    height: 850px;
+    flex-wrap: nowrap;
+}
+
+/* #key-players ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0; */
+
+
+#key-players .list-item {
+    min-width: 200px;
+    vertical-align: top;
+}
+
+#key-players  .list-item  img {
+    height: 300px;
+    width: 180px;
+    object-fit: cover;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#key-players  .list-item  strong {
+    font-family: "Archivo Black", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px white;
+
+    font-size: 20px;
+    line-height: 1.2em;
+
+}
+
+#key-players  .list-item  p {
+    margin: 10px 0px;
+    color: #332a2d
+}
+
+/* @media (max-width: 1250px) {
+    #key-players li {
+        display: flex;
+        flex: 0 0 auto;
+        padding-bottom: 120px;
+        align-content: center;
+        width: 33%;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    #key-players ul {
+        overflow-x: auto;
+    }
+
+    #key-players p {
+        font-size: 12px;
+        width: 140px;
+    }
+
+    #key-players li img {
+        height: 210px;
+        width: 140px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 560px) {
+    #key-players li {
+        display: flex;
+        flex: 0 0 auto;
+        padding-bottom: 120px;
+        align-content: center;
+        width: 100%;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    #key-players ul {
+        overflow-x: auto;
+    }
+
+    #key-players p {
+        font-size: 12px;
+        width: 140px;
+    }
+
+    #key-players li img {
+        height: 210px;
+        width: 140px;
+        object-fit: cover;
+    }
+} */
+
+/* Background */
+
+#background img {
+    margin: 35px 0px 35px 40px;
+    height: 380px;
+    object-fit: cover;
+    border-collapse: separate;
+    float: right;
+}
+
+@media (max-width: 600px) {
+    #background img {
+        height: 220px;
+    }
+}
+
+
+/* Trial */
+#trial {
+    padding-bottom: 50px;
+}
+
+#trial strong {
+    font-family: "Archivo Black", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: gold;
+    text-shadow: 1px 1px 1px red;
+
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+h4 {
+    font-style: bold;
+    color: gold;
+    letter-spacing: 0.25em;
+}
+
+#two-sides {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#two-sides>div {
+    width: 45%;
+    padding: 35px;
+    background-color: #b6815867;
+}
+
+#prosecution {
+    margin-right: 20px;
+}
+
+#defense {
+    margin-left: 20px;
+}
+
+@media (max-width: 1060px){
+    #two-sides>div {
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+    #two-sides {
+        display:block;
+    }
+}
+/* Footer */
+footer {
+    padding: 50px 0px;
+    margin-top: 50px;
+    background-color: #b681588a;
+}
+
+
+footer p {
+    font-size: 14px;
+}
